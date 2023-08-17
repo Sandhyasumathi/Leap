@@ -27,4 +27,4 @@ jobs:
         run: mvn clean package
 
       - name: Run Jar File
-        run: java -jar target/HelloWorldMavenProject-1.0-SNAPSHOT.jar first.myapp.App
+        run: java -jar target/leap-1.0-SNAPSHOT.jar first.App
