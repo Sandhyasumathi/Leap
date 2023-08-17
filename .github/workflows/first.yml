@@ -25,6 +25,6 @@ jobs:
           ls -lrt
       - name: Run Maven
         run: mvn clean package
-        
+
       - name: Run Jar File
-        run: java -jar target/HelloWorldMavenProject-1.0-SNAPSHOT.jar
+        run: java -jar target/HelloWorldMavenProject-1.0-SNAPSHOT.jar first.myapp.App
