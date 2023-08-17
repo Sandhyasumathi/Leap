@@ -13,4 +13,11 @@ jobs:
       
       - name: Run Maven
         run: mvn clean package
+      
+      - name: Execute Artifact
+        run: java -cp target/my-app-1.0-SNAPSHOT.jar com.example.MyApp
 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          path: target/my-app-1.0-SNAPSHOT.jar
