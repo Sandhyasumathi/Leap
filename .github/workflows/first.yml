@@ -10,6 +10,24 @@ jobs:
 
       - name: checkout
         uses: actions/checkout@v2
-      
+
+      - name: Validate
+        run: |
+          mvn validate
+          ls -lrt
+      - name: Validate
+        run: |
+          mvn compile
+          ls -lrt
+      - name: Test
+        run: |
+          mvn test
+          ls -lrt
       - name: Run Maven
         run: mvn clean package
+      
+      - name: Build with Maven
+        run: mvn validate compile test clean package
+
+      - name: Run Jar File
+        run: java -jar target/HelloWorldMavenProject-1.0-SNAPSHOT.jar
