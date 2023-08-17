@@ -25,9 +25,6 @@ jobs:
           ls -lrt
       - name: Run Maven
         run: mvn clean package
-      
-      - name: Build with Maven
-        run: mvn validate compile test clean package
-
+        
       - name: Run Jar File
         run: java -jar target/HelloWorldMavenProject-1.0-SNAPSHOT.jar
