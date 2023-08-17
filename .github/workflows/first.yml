@@ -9,7 +9,7 @@ jobs:
     steps:
 
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Validate
         run: |
@@ -30,6 +30,6 @@ jobs:
         run: java -cp target/leap-1.0-SNAPSHOT.jar first.App
 
       - name: upload artifact
-        uses: actions/upload-artifact@v2         
+        uses: actions/upload-artifact@v3       
         with:           
           path: target/leap-1.0-SNAPSHOT.jar
