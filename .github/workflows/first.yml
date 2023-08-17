@@ -1,0 +1,17 @@
+name: Maven Project
+
+on: [push]
+
+jobs:
+  run-github:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: path
+        run: |
+          pwd
+          ls -a
+      - name: checkout
+        uses: Sandhyasumathi/Leap@main
+  
+
