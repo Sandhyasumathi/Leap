@@ -15,7 +15,7 @@ jobs:
         run: |
           mvn validate
           ls -lrt
-      - name: Validate
+      - name: Compile
         run: |
           mvn compile
           ls -lrt
